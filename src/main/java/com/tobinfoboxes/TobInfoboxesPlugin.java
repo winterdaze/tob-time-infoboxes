@@ -37,13 +37,12 @@ public class TobInfoboxesPlugin extends Plugin
 
 	@Inject
 	private InfoBoxManager infoBoxManager;
-
-	private static final Pattern MAIDEN_COMPLETE = Pattern.compile("Wave 'The Maiden of Sugadinti' complete! Duration: (\\d+):(\\d+)");
-	private static final Pattern BLOAT_COMPLETE = Pattern.compile("Wave 'The Pestilent Bloat' complete! Duration: (\\d+):(\\d+)");
-	private static final Pattern NYLOCAS_COMPLETE = Pattern.compile("Wave 'The Nylocas' complete! Duration: (\\d+):(\\d+)");
-	private static final Pattern SOTETSEG_COMPLETE = Pattern.compile("Wave 'Sotetseg' complete! Duration: (\\d+):(\\d+)");
-	private static final Pattern XARPUS_COMPLETE = Pattern.compile("Wave 'Xarpus' complete! Duration: (\\d+):(\\d+)");
-	private static final Pattern VERZIK_COMPLETE = Pattern.compile("Wave 'The Final Challenge' complete! Duration: (\\d+):(\\d+)");
+	private static final Pattern MAIDEN_COMPLETE = Pattern.compile("Wave 'The Maiden of Sugadinti' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
+	private static final Pattern BLOAT_COMPLETE = Pattern.compile("Wave 'The Pestilent Bloat' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
+	private static final Pattern NYLOCAS_COMPLETE = Pattern.compile("Wave 'The Nylocas' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
+	private static final Pattern SOTETSEG_COMPLETE = Pattern.compile("Wave 'Sotetseg' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
+	private static final Pattern XARPUS_COMPLETE = Pattern.compile("Wave 'Xarpus' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
+	private static final Pattern VERZIK_COMPLETE = Pattern.compile("Wave 'The Final Challenge' \\((?:Story|Normal|Hard) Mode\\) complete!Duration: (\\d+):(\\d+)");
 	private static final Pattern TOTAL_COMPLETE = Pattern.compile("Theatre of Blood wave completion time: (\\d+):(\\d+)");
 
 	private TobInfobox maidenInfoBox;
